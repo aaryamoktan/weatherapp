@@ -1,0 +1,60 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.wetherConteiner{
+    position:relative;
+    width:100%;
+    height:100vh;
+    background:rgb(197, 236, 197);
+    .innerContainer
+    {
+        position:relative;
+        top: 20%;
+        margin-left:35%;
+        box-shadow: 2px  2px 30px white;
+        font-size: 25px;
+        width:25%;
+        height:55vh;
+        border-radius:20px;
+        background: transparent;
+        .innterInput
+        {
+            position:relative;
+            background: transparent;
+            width:100%;
+            height:5vh;
+        
+            input{
+                position:relative;
+                margin:20px;
+                margin-left:26px;
+                width:80%;
+                height:100%;
+                border:none;
+                background: transparent;
+                border-bottom: 2px solid black;
+            }
+            input:focus{
+                outline: none;
+            }
+            button{
+                position:relative;
+                top:12px;
+                left:-10px;
+                font-size: 30px;
+                border:none;
+                background:transparent;
+            }
+        }
+        .wetheroutuput
+        {
+            position:relative;
+            margin-top:40px;
+            width:100%;
+            height:45vh;
+            background:rgb(152, 222, 152);
+        }
+    }
+}

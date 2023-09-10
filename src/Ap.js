@@ -10,14 +10,12 @@ const Ap = () => {
     }
    const submit = ()=>
    {
-
    }
     useEffect(()=>
     {
         const fetchApi = async()=>
         {
-         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=33830f263ea8817719aef4311b7197df`)
-         //const response =await fetch ('')
+           const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=33830f263ea8817719aef4311b7197df`)
            const responsedata = await response.json();
            console.log(responsedata);
            setcity(responsedata)
@@ -40,25 +38,18 @@ const Ap = () => {
                     {
                         (!city)?(<p>data not found</p>):(
                           <div>
-                          
                           <p>temp :{city.main?.temp}</p>
                           <p>Wind speed :{city.wind?.speed}</p>
                           <p>Country :{city.sys?.country}</p>
-                          <p>City :{city.name}</p>
-                          
+                          <p>City :{city.name}</p> 
                           <br/>
-                        
                            </div>
                         )
                     }
-                  
                     </div>
                 </div>
-
             </div>
-
         </>
     )
 }
-
 export default Ap

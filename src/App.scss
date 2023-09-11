@@ -55,6 +55,26 @@
             width:100%;
             height:45vh;
             background:rgb(152, 222, 152);
+            .temp{
+                position:relative;
+                left:9%;
+                top:100px;
+            }
+            .speed{
+                position:relative;
+                left:25%;
+                top:130px;
+            }
+            .country{
+                position:relative;
+                left:8%;
+                top:200px;
+            }
+            .city{
+                position:relative;
+                left:57%;
+                top:165px;
+            }
         }
     }
 }

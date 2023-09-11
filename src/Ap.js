@@ -36,12 +36,14 @@ const Ap = () => {
                     </div>
                     <div className='wetheroutuput'>
                     {
+                       
                         (!city)?(<p>data not found</p>):(
+                            
                           <div>
-                          <p>temp :{city.main?.temp}</p>
-                          <p>Wind speed :{city.wind?.speed}</p>
-                          <p>Country :{city.sys?.country}</p>
-                          <p>City :{city.name}</p> 
+                          <p className='temp'>Temp :{city.main?.temp - 273}°C</p>
+                          <p className='speed'>Wind speed :{city.wind?.speed}</p>
+                          <p className='country'>Country :{city.sys?.country}</p>
+                          <p className='city'>City :{city.name}</p> 
                           <br/>
                            </div>
                         )
